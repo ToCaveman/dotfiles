@@ -1,0 +1,116 @@
+* {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+window#waybar {
+  background: #101010;
+  color: #ffffff;
+}
+
+#workspaces,
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#temperature,
+#tray {
+  background: #151515;
+}
+
+#workspaces button {
+  padding: 0 4px 0 4px;
+  color: #fff;
+}
+
+#workspaces button.active {
+  color: #000000;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  border: none;
+}
+
+#workspaces button:hover {
+  background: #151515;
+  border: #151515;
+  padding: 0 5px;
+}
+
+#workspaces button.active:hover {
+  background: #fff;
+  color: #151515;
+  padding: 0 4px;
+}
+
+
+#pulseaudio {
+  color: #ffffff;
+}
+#memory {
+  color: #ffffff;
+}
+#cpu {
+  color: #4fd900;
+}
+/* #battery { */
+/*  color: #ffffff; */
+/* } */
+#disk {
+  color: #ffffff;
+}
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#temperature,
+#disk {
+  padding: 0 7px;
+}
+
+/* mainis krasinas atkariba no procentiem */
+#battery.full {
+  color:  #ffffff;
+}
+#battery.good {
+  color:  #4fd900;
+}
+#battery.warning {
+  color: #e55304;
+}
+#battery.critical {
+  color: #e50404;
+}
+
+#cpu.good {
+  color: #e5d704; 
+}
+#cpu.bad {
+  color: #e55304;
+}
+#cpu.ugly {
+  color: #e50404;
+}
+
+#memory.good {
+  color: #e5d704; 
+}
+#memory.bad {
+  color: #e55304;
+}
+#memory.shit {
+  color: #e50404;
+}
+
+#temperature.critical {
+  color: #e50404;
+}
