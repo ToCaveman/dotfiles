@@ -54,6 +54,7 @@ kwriterc
 kxkbrc
 libaccounts-glib/
 mimeapps.list
+                   -`                    peteris@archlinux
 pavucontrol.ini
 plasma.emojierrc
 plasma-localerc
@@ -81,3 +82,4 @@ user-dirs.locale
 Vencord/
 xsettingsd/
 yay/
+libreoffice/
