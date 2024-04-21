@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-  background: #101010;
+  background: rgba(10, 10, 10, 0.3);
   color: #ffffff;
 }
 
@@ -77,8 +77,9 @@ window#waybar {
 #cpu,
 #battery,
 #temperature,
+#tray,
 #disk {
-  padding: 0 7px;
+  padding: 0 6px;
 }
 
 /* mainis krasinas atkariba no procentiem */
