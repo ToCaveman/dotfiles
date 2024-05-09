@@ -21,7 +21,7 @@ window#waybar {
 
 #clock {
   color: #151515;
-  background: #fff;
+  background: #5700ff;
 }
 
 #workspaces button {
@@ -31,7 +31,7 @@ window#waybar {
 
 #workspaces button.active {
   color: #000000;
-  background: #fff;
+  background: #5700ff;
   border: none;
   border-radius: 0;
 }
@@ -62,7 +62,7 @@ window#waybar {
   color: #ffffff;
 }
 #cpu {
-  color: #4fd900;
+  color: #5700ff;
 }
 /* #battery { */
 /*  color: #ffffff; */
