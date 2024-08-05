@@ -5,39 +5,22 @@
 
     "modules-left": [
         "hyprland/workspaces",
+        "pulseaudio"
     ],
 
     "modules-right": [
-        "pulseaudio",
         "cpu",
         "memory",
-        "temperature",
         "battery",
         "clock",
         "tray"
     ],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     
     "hyprland/workspaces": {
       "disable-scroll": true,
       "format": "{name}"
     },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -59,23 +42,14 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "states": {
-          "ugly": 90,
-          "bad": 70,
-          "good": 40,
-        },
-        "interval": 5,
-        "format": "CPU {usage}%",
-        //"tooltip": false
+        "interval": 15,
+        "format": " {usage}%",
+        "max-length": 10
     },
     "memory": {
-        "states": {
-          "shit": 90,
-          "bad": 70,
-          "good": 50,
-        },
-        "interval": 5,
-        "format": "MEM {}%"
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
     },
     //"temperature": {
     //    // "thermal-zone": 2,
@@ -85,44 +59,31 @@
     //    "format": "{temperatureC}°C {icon}",
     //    "format-icons": ["", "", ""]
     //},
-    "temperature": {
-      "critical-threshold": 70,
-      "format": "{temperatureC}°C",
-    },
     "battery": {
         "states": {
-            "full": 100,
-            "good": 70,
+            "good": 95,
             "warning": 30,
-            "critical": 15
+            "critical": 20
         },
-        "format": "BTR {capacity}%",
-        "format-full": "BTR {capacity}%",
-        "format-charging": "CHG {capacity}%",
-        "format-plugged": "PLG {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
+
     "hyprland/workspaces": {
       "disable-scroll": true,
       "format": "{name}"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid}",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      "tooltip": false,
+		  "format-wifi": "  {essid}",
+		  "format-ethernet": ""
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",

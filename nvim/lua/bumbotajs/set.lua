@@ -18,6 +18,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
+vim.g.gruvbox_contrast_light = 'hard'
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
@@ -25,3 +26,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+--vim.cmd("autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE")
