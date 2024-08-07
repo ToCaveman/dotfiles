@@ -4,15 +4,14 @@
 }
 
 window {
-  border: solid 3px #F5D547;
   font-size: 18px;
-  font-family: "Roboto Mono Medium";
+  font-family: "Noto Sans Rgular";
   background-color: rgba(255,255 , 255, 0.9);
   color: #000;
 }
 
 #entry:selected {
-  background-color: #F5D547;
+  background-color: #D387D2;
 }
 
 #img {
@@ -28,7 +27,6 @@ window {
 }
 
 #input {
-  border: solid 3px #F5D547;
   background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   padding: 0.25em;
